@@ -1,0 +1,22 @@
+{
+  "slug": "crm",
+  "nombre": "CRM",
+  "nombreCompleto": "Software CRM",
+  "descripcionBase": "Un CRM (Customer Relationship Management) centraliza clientes, ventas y seguimiento automatizado.",
+  "productos": [
+    {
+      "id": "hubspot",
+      "nombre": "HubSpot CRM",
+      "descripcion": "Solución líder con plan gratuito robusto, ideal para automatizar tu negocio y organizar contactos.",
+      "precio": "Gratis / desde 45€/mes",
+      "puntuacion": 4.8,
+      "ventajas": ["Plan gratuito ilimitado", "Integración con email y WhatsApp", "App móvil muy potente"],
+      "desventajas": ["Curva de aprendizaje inicial", "El salto a premium es caro"],
+      "afiliado": {
+        "red": "partnerstack",
+        "url": "https://partnerstack.com/tu-enlace-de-afiliado-aqui",
+        "comision": "20% recurrente"
+      }
+    }
+  ]
+}
