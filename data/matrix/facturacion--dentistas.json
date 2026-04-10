@@ -1,0 +1,103 @@
+{
+  "categoria": "facturacion",
+  "nicho": "dentistas",
+  "titulo_h1": "El Mejor Software de Facturación para Dentistas en 2025",
+  "meta_title": "Mejor Software de Facturación para Dentistas 2025 | Top 4",
+  "meta_description": "Descubre los 4 mejores Software de Facturación para Dentistas. Comparativa de funciones, precios y opiniones. Guía 2025.",
+  "intro": "Los dentistas necesitan un software de facturación eficiente para gestionar sus finanzas y reducir el estrés administrativo. Un buen software de facturación puede ayudar a los dentistas a ahorrar tiempo y a mejorar la experiencia del paciente. Además, puede ayudar a reducir los errores y a aumentar la productividad.",
+  "pain_points": [
+    "Dificultad para gestionar las facturas y los pagos",
+    "Pérdida de tiempo en tareas administrativas",
+    "Dificultad para mantener la organización y la precisión en la facturación"
+  ],
+  "productos": [
+    {
+      "nombre": "Dentrix",
+      "slug": "dentrix",
+      "puntuacion": 4.7,
+      "precio_desde": "129€/mes",
+      "descripcion": "Dentrix es un software de facturación y gestión dental que ofrece una solución integral para los dentistas. Permite la gestión de facturas, pagos y citas de manera eficiente.",
+      "pros": [
+        "Interfaz fácil de usar",
+        "Integración con sistemas de gestión dental",
+        "Soporte técnico de alta calidad"
+      ],
+      "cons": [
+        "Costo elevado",
+        "Requiere entrenamiento para su uso"
+      ],
+      "url_afiliado": "https://www.dentrix.com",
+      "badge": "Más popular"
+    },
+    {
+      "nombre": "Eaglesoft",
+      "slug": "eaglesoft",
+      "puntuacion": 4.5,
+      "precio_desde": "99€/mes",
+      "descripcion": "Eaglesoft es un software de facturación y gestión dental que ofrece una solución completa para los dentistas. Permite la gestión de facturas, pagos y citas de manera eficiente.",
+      "pros": [
+        "Interfaz fácil de usar",
+        "Integración con sistemas de gestión dental",
+        "Soporte técnico de alta calidad"
+      ],
+      "cons": [
+        "No es compatible con todos los sistemas operativos",
+        "Requiere entrenamiento para su uso"
+      ],
+      "url_afiliado": "https://www.eaglesoft.net",
+      "badge": "Recomendado"
+    },
+    {
+      "nombre": "Curve Dental",
+      "slug": "curve-dental",
+      "puntuacion": 4.8,
+      "precio_desde": "149€/mes",
+      "descripcion": "Curve Dental es un software de facturación y gestión dental que ofrece una solución integral para los dentistas. Permite la gestión de facturas, pagos y citas de manera eficiente.",
+      "pros": [
+        "Interfaz fácil de usar",
+        "Integración con sistemas de gestión dental",
+        "Soporte técnico de alta calidad"
+      ],
+      "cons": [
+        "Costo elevado",
+        "Requiere entrenamiento para su uso"
+      ],
+      "url_afiliado": "https://www.curvedental.com",
+      "badge": "Premiados"
+    },
+    {
+      "nombre": "Open Dental",
+      "slug": "open-dental",
+      "puntuacion": 4.6,
+      "precio_desde": "79€/mes",
+      "descripcion": "Open Dental es un software de facturación y gestión dental que ofrece una solución completa para los dentistas. Permite la gestión de facturas, pagos y citas de manera eficiente.",
+      "pros": [
+        "Interfaz fácil de usar",
+        "Integración con sistemas de gestión dental",
+        "Soporte técnico de alta calidad"
+      ],
+      "cons": [
+        "No es compatible con todos los sistemas operativos",
+        "Requiere entrenamiento para su uso"
+      ],
+      "url_afiliado": "https://www.opendental.com",
+      "badge": "Valorado"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el mejor software de facturación para dentistas?",
+      "respuesta": "El mejor software de facturación para dentistas depende de las necesidades específicas de cada clínica dental. Sin embargo, algunos de los software más populares incluyen Dentrix, Eaglesoft, Curve Dental y Open Dental."
+    },
+    {
+      "pregunta": "¿Cuánto cuesta un software de facturación para dentistas?",
+      "respuesta": "El costo de un software de facturación para dentistas varía dependiendo del proveedor y las características del software. Algunos software pueden costar alrededor de 79€/mes, mientras que otros pueden costar más de 149€/mes."
+    },
+    {
+      "pregunta": "¿Es fácil de usar un software de facturación para dentistas?",
+      "respuesta": "La mayoría de los software de facturación para dentistas son fáciles de usar y ofrecen una interfaz intuitiva. Sin embargo, es posible que se requiera algún entrenamiento para familiarizarse con las características y funcionalidades del software."
+    }
+  ],
+  "schema_type": "ItemList",
+  "last_updated": "2026-04-10"
+}
