@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import type { ThemeClasses } from '@/lib/themes'
-import type { Product } from '@/lib/matrix'
+import type { ThemeClasses } from '../lib/themes'
+import type { Product } from '../lib/matrix'
 
 type Props = {
   producto: Product
@@ -15,13 +15,11 @@ export default function StickyCTA({ producto, t }: Props) {
   const timerRef    = useRef<ReturnType<typeof setTimeout>>()
 
   useEffect(() => {
-    // Aparece tras 4 segundos O cuando el usuario ha hecho scroll > 400px
     timerRef.current = setTimeout(() => setVisible(true), 4000)
 
     const onScroll = () => {
       const y = window.scrollY
       if (y > 400) setVisible(true)
-      // En móvil: detecta scroll rápido hacia arriba (exit intent móvil)
       if (y < lastScrollY.current - 80) setVisible(true)
       lastScrollY.current = y
     }
@@ -36,10 +34,8 @@ export default function StickyCTA({ producto, t }: Props) {
   if (dismissed || !visible) return null
 
   return (
-    // Solo visible en móvil (md:hidden). En desktop el layout tiene espacio suficiente.
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 shadow-2xl">
       <div className="flex items-center gap-3">
-        {/* Info del producto ganador */}
         <div className="flex-1 min-w-0">
           <p className="text-xs text-gray-500 dark:text-gray-400 leading-none mb-0.5">
             Mejor valorado
@@ -52,7 +48,6 @@ export default function StickyCTA({ producto, t }: Props) {
           </p>
         </div>
 
-        {/* CTA */}
         <a
           href={producto.url_afiliado}
           target="_blank"
@@ -62,7 +57,6 @@ export default function StickyCTA({ producto, t }: Props) {
           Probar gratis →
         </a>
 
-        {/* Dismiss */}
         <button
           onClick={() => setDismissed(true)}
           aria-label="Cerrar"
