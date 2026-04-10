@@ -1,0 +1,5 @@
+[
+  { "slug": "crm", "label": "CRM" },
+  { "slug": "facturacion", "label": "Software de Facturación" },
+  { "slug": "gestion-proyectos", "label": "Gestor de Proyectos" }
+]
