@@ -1,11 +1,11 @@
 import { Metadata }    from 'next'
 import { notFound }    from 'next/navigation'
-import { getAllMatrixSlugs, getMatrixEntry, getCategories, type Product } from '@/lib/matrix'
-import { getTheme }    from '@/lib/themes'
-import StickyCTA       from '@/components/StickyCTA'
-import ComparisonTable from '@/components/ComparisonTable'
-import ExitIntent      from '@/components/ExitIntent'
-import AdUnit          from '@/components/AdUnit'
+import { getAllMatrixSlugs, getMatrixEntry, getCategories, type Product } from '../../../lib/matrix'
+import { getTheme }    from '../../../lib/themes'
+import StickyCTA       from '../../../components/StickyCTA'
+import ComparisonTable from '../../../components/ComparisonTable'
+import ExitIntent      from '../../../components/ExitIntent'
+import AdUnit          from '../../../components/AdUnit'
 
 type Props = { params: { categoria: string; nicho: string } }
 
@@ -53,7 +53,6 @@ function Breadcrumbs({
     { label: nichoLabel,      href: null },
   ]
 
-  // JSON-LD para BreadcrumbList (mejora el rich snippet en Google)
   const breadcrumbLd = {
     '@context':        'https://schema.org',
     '@type':           'BreadcrumbList',
@@ -199,17 +198,13 @@ function ProductCard({
   rank:     number
   t:        ReturnType<typeof getTheme>
 }) {
-  // Extrae el color base del rankBg para reutilizarlo en la barra
-  // e.g. "bg-blue-600" → "bg-blue-600"
   const accentBg = t.rankBg
 
   return (
     <article
       id={`producto-${producto.slug}`}
-      // scroll-mt para que el anchor no quede tapado por navbars sticky
       className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-200 scroll-mt-6"
     >
-      {/* Cabecera */}
       <div className="flex items-start justify-between gap-4 mb-4">
         <div className="flex items-center gap-3">
           <div
@@ -241,7 +236,6 @@ function ProductCard({
         {producto.descripcion}
       </p>
 
-      {/* Pros / Cons */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div>
           <p className={`text-xs font-semibold uppercase tracking-widest mb-2 ${t.accentText}`}>
@@ -271,7 +265,6 @@ function ProductCard({
         </div>
       </div>
 
-      {/* CTA */}
       <a
         href={producto.url_afiliado}
         target="_blank"
@@ -294,12 +287,10 @@ export default function MatrixPage({ params }: Props) {
   const nichoLabel     = params.nicho.replace(/-/g, ' ')
   const categoriaLabel = params.categoria.replace(/-/g, ' ')
 
-  // Obtiene el label legible de la categoría desde el JSON maestro
   const categories     = getCategories()
   const catMeta        = categories.find(c => c.slug === params.categoria)
   const categoriaFull  = catMeta?.label ?? categoriaLabel
 
-  // ── Schema.org ────────────────────────────────────────────────────────
   const jsonLd = {
     '@context':      'https://schema.org',
     '@type':         'ItemList',
@@ -330,7 +321,6 @@ export default function MatrixPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
-      {/* ── Breadcrumbs (incluye su propio JSON-LD) ─────────────────── */}
       <Breadcrumbs
         categoriaSlug={params.categoria}
         categoriaLabel={categoriaFull}
@@ -338,7 +328,6 @@ export default function MatrixPage({ params }: Props) {
         t={t}
       />
 
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
       <header className={`${t.heroBg} ${t.heroText} py-14 px-4 mt-2`}>
         <div className="max-w-4xl mx-auto">
           <div className={`inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 ${t.badgeBg} ${t.badgeText}`}>
@@ -360,7 +349,6 @@ export default function MatrixPage({ params }: Props) {
         </div>
       </header>
 
-      {/* ── Leaderboard ad ───────────────────────────────────────────── */}
       <div className="bg-gray-50 dark:bg-gray-900/50 flex justify-center py-3 px-4 border-b border-gray-100 dark:border-gray-800">
         <AdUnit
           format="leaderboard"
@@ -370,15 +358,12 @@ export default function MatrixPage({ params }: Props) {
 
       <main className="max-w-4xl mx-auto px-4 py-10">
 
-        {/* ── Tabla de contenidos ──────────────────────────────────── */}
         <TableOfContents productos={entry.productos} t={t} />
 
-        {/* ── Comparativa rápida Top 3 ─────────────────────────────── */}
         <div id="comparativa-rapida" className="scroll-mt-6">
           <ComparisonTable productos={entry.productos} t={t} />
         </div>
 
-        {/* ── Pain points ─────────────────────────────────────────── */}
         <div className={`rounded-2xl border p-5 mb-10 ${t.painBg} ${t.painBorder}`}>
           <h2 className={`font-semibold mb-3 ${t.painTitle}`}>
             Problemas habituales sin el software adecuado
@@ -393,7 +378,6 @@ export default function MatrixPage({ params }: Props) {
           </ul>
         </div>
 
-        {/* ── In-content ad #1 ─────────────────────────────────────── */}
         <div className="flex justify-center mb-10">
           <AdUnit
             format="in-content"
@@ -401,7 +385,6 @@ export default function MatrixPage({ params }: Props) {
           />
         </div>
 
-        {/* ── Ranking detallado ────────────────────────────────────── */}
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
           Los mejores {categoriaFull} para {nichoLabel}
         </h2>
@@ -417,7 +400,6 @@ export default function MatrixPage({ params }: Props) {
           ))}
         </div>
 
-        {/* ── In-content ad #2 ─────────────────────────────────────── */}
         <div className="flex justify-center mb-12">
           <AdUnit
             format="in-content"
@@ -425,7 +407,6 @@ export default function MatrixPage({ params }: Props) {
           />
         </div>
 
-        {/* ── Tabla resumen (texto denso, valioso para SEO) ────────── */}
         <div className="mb-12 overflow-x-auto rounded-2xl border border-gray-200 dark:border-gray-700">
           <table className="w-full text-sm">
             <caption className="sr-only">
@@ -485,7 +466,6 @@ export default function MatrixPage({ params }: Props) {
           </table>
         </div>
 
-        {/* ── FAQ ──────────────────────────────────────────────────── */}
         <section id="preguntas-frecuentes" className="scroll-mt-6">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Preguntas frecuentes
@@ -510,7 +490,6 @@ export default function MatrixPage({ params }: Props) {
           </div>
         </section>
 
-        {/* ── In-content ad #3 ─────────────────────────────────────── */}
         <div className="flex justify-center mt-10">
           <AdUnit
             format="in-content"
@@ -518,7 +497,6 @@ export default function MatrixPage({ params }: Props) {
           />
         </div>
 
-        {/* ── Footer de página ─────────────────────────────────────── */}
         <footer className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-800 text-center">
           <p className="text-xs text-gray-400">
             Última actualización:{' '}
@@ -531,7 +509,6 @@ export default function MatrixPage({ params }: Props) {
         </footer>
       </main>
 
-      {/* ── Componentes flotantes (Client Components) ────────────────── */}
       <StickyCTA  producto={winner} t={t} />
       <ExitIntent producto={winner} nicho={params.nicho} t={t} />
     </>
