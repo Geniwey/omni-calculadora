@@ -1,0 +1,7 @@
+[
+  { "slug": "dentistas", "label": "Dentistas" },
+  { "slug": "abogados", "label": "Abogados" },
+  { "slug": "arquitectos", "label": "Arquitectos" },
+  { "slug": "fisioterapeutas", "label": "Fisioterapeutas" },
+  { "slug": "psicologos", "label": "Psicólogos" }
+]
