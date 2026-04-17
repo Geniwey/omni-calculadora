@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.name "AutoGrow Bot"
           git config --global user.email "bot@softwareprof.com"
-          git add data/matrix/
+          git add .
           git commit -m "🤖 AutoGrow: nuevas páginas pSEO generadas con IA" || echo "No hay cambios nuevos para guardar"
           git pull --rebase origin main
           git push
