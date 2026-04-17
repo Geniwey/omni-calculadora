@@ -1,0 +1,100 @@
+{
+  "categoria": "crm",
+  "nicho": "inmobiliarias",
+  "titulo_h1": "Los 4 mejores CRM para Inmobiliarias en 2026",
+  "meta_title": "Mejor CRM para Inmobiliarias 2026 | Top 4",
+  "meta_description": "Análisis de software para Inmobiliarias. Comparamos los 4 mejores CRM del mercado español.",
+  "intro": "Para un Inmobiliarias, elegir el CRM adecuado es vital.",
+  "pain_points": [
+    "Punto de dolor 1",
+    "Punto de dolor 2",
+    "Punto de dolor 3"
+  ],
+  "theme": {
+    "colorPrincipal": "blue"
+  },
+  "productos": [
+    {
+      "nombre": "Propyme",
+      "slug": "propyme-slug",
+      "puntuacion": 4.8,
+      "precio_desde": "49€/mes",
+      "descripcion": "Ideal para Inmobiliarias y agentes inmobiliarios.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2",
+        "Ventaja 3"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://propyme.com",
+      "badge": "Mejor Valoración"
+    },
+    {
+      "nombre": "CRM Inmobiliario",
+      "slug": "crm-inmobiliario-slug",
+      "puntuacion": 4.6,
+      "precio_desde": "29€/mes",
+      "descripcion": "Software para Inmobiliarias.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1",
+        "Inconveniente 2"
+      ],
+      "url_afiliado": "https://crminmobiliario.com",
+      "badge": ""
+    },
+    {
+      "nombre": "Inmobiliaria CRM",
+      "slug": "inmobiliaria-crm-slug",
+      "puntuacion": 4.4,
+      "precio_desde": "39€/mes",
+      "descripcion": "Ideal para agentes inmobiliarios.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://inmobiliaria-crm.com",
+      "badge": ""
+    },
+    {
+      "nombre": "Realia CRM",
+      "slug": "realia-crm-slug",
+      "puntuacion": 4.9,
+      "precio_desde": "59€/mes",
+      "descripcion": "Software para Inmobiliarias y agentes inmobiliarios.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2",
+        "Ventaja 3"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://realia-crm.com",
+      "badge": "Mejor Valoración"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Es fácil de usar?",
+      "respuesta": "Sí, para un Inmobiliarias es intuitivo."
+    },
+    {
+      "pregunta": "¿Cuál es el precio?",
+      "respuesta": "Varía según el CRM."
+    },
+    {
+      "pregunta": "¿Cuáles son las características?",
+      "respuesta": "Varía según el CRM."
+    }
+  ],
+  "last_updated": "2026-04-17"
+}

@@ -1,0 +1,97 @@
+{
+  "categoria": "erp",
+  "nicho": "retail",
+  "titulo_h1": "Los 4 mejores ERP para Retail en 2026",
+  "meta_title": "Mejor ERP para Retail 2026 | Top 4",
+  "meta_description": "Análisis de software para Retail. Comparamos los 4 mejores ERP del mercado español.",
+  "intro": "Para un Retail, elegir el ERP adecuado es vital.",
+  "pain_points": [
+    "Punto de dolor 1",
+    "Punto de dolor 2",
+    "Punto de dolor 3"
+  ],
+  "theme": {
+    "colorPrincipal": "amber"
+  },
+  "productos": [
+    {
+      "nombre": "Microsoft Dynamics 365",
+      "slug": "microsoft-dynamics-365-slug",
+      "puntuacion": 4.8,
+      "precio_desde": "1.500€/mes",
+      "descripcion": "ERP integral para Retail.",
+      "pros": [
+        "Integración con Office 365",
+        "Escalabilidad"
+      ],
+      "cons": [
+        "Costoso"
+      ],
+      "url_afiliado": "https://www.microsoft.com/es-es/dynamics365",
+      "badge": "Mejor Valoración"
+    },
+    {
+      "nombre": "SAP Business One",
+      "slug": "sap-business-one-slug",
+      "puntuacion": 4.6,
+      "precio_desde": "1.200€/mes",
+      "descripcion": "ERP de código abierto para Retail.",
+      "pros": [
+        "Código abierto",
+        "Personalizable"
+      ],
+      "cons": [
+        "Poco intuitivo"
+      ],
+      "url_afiliado": "https://www.sap.com/es-es/business-one.html",
+      "badge": ""
+    },
+    {
+      "nombre": "Odoo Retail",
+      "slug": "odoo-retail-slug",
+      "puntuacion": 4.5,
+      "precio_desde": "900€/mes",
+      "descripcion": "ERP de código abierto para Retail.",
+      "pros": [
+        "Código abierto",
+        "Personalizable"
+      ],
+      "cons": [
+        "Poco intuitivo"
+      ],
+      "url_afiliado": "https://www.odoo.com/es-es/solutions/retail",
+      "badge": ""
+    },
+    {
+      "nombre": "Zoho Inventory",
+      "slug": "zoho-inventory-slug",
+      "puntuacion": 4.4,
+      "precio_desde": "600€/mes",
+      "descripcion": "ERP para Retail pequeñas y medianas empresas.",
+      "pros": [
+        "Fácil de usar",
+        "Integración con Zoho CRM"
+      ],
+      "cons": [
+        "Limitaciones en escalabilidad"
+      ],
+      "url_afiliado": "https://www.zoho.com/inventory",
+      "badge": ""
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Es fácil de usar?",
+      "respuesta": "Sí, para un Retail es intuitivo."
+    },
+    {
+      "pregunta": "¿Cuál es el precio?",
+      "respuesta": "Varía según el producto y la empresa."
+    },
+    {
+      "pregunta": "¿Qué características busco en un ERP para Retail?",
+      "respuesta": "Integración con otros sistemas, escalabilidad, personalización y fácil de usar."
+    }
+  ],
+  "last_updated": "2026-04-17"
+}
