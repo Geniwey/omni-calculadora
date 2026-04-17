@@ -1,0 +1,36 @@
+name: AutoGrow - pSEO Content Engine
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install Dependencies
+        run: npm install groq-sdk
+        
+      - name: Run AutoGrow
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/autogrow.mjs
+        
+      - name: Commit and Push
+        run: |
+          git config --global user.name "AutoGrow Bot"
+          git config --global user.email "bot@softwareprof.com"
+          git add data/matrix/
+          git commit -m "🤖 AutoGrow: nuevas páginas pSEO generadas con IA" || echo "No hay cambios nuevos para guardar"
+          git pull --rebase origin main
+          git push
