@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll suave para los enlaces de la tabla de contenidos */
+html { scroll-behavior: smooth; }
+
+/* Oculta la flechita nativa de las FAQ */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
