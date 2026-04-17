@@ -2,9 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Scroll suave para los anchor links de la tabla de contenidos */
-html { scroll-behavior: smooth; }
+:root {
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --shadow-subtle: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -1px rgb(0 0 0 / 0.06);
+  --shadow-elevated: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+  --shadow-intense: 0 20px 25px -5px rgb(0 0 0 / 0.12), 0 10px 10px -5px rgb(0 0 0 / 0.08);
+}
 
-/* Oculta el marcador nativo de <details> en todos los navegadores */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  h1, h2, h3, h4 { @apply font-semibold tracking-tight; }
+  h1 { @apply text-4xl lg:text-5xl leading-tight; letter-spacing: -0.025em; }
+  h2 { @apply text-3xl lg:text-4xl; letter-spacing: -0.02em; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white;
+    @apply shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40;
+    @apply hover:scale-[1.02] active:scale-[0.98] relative overflow-hidden;
+  }
+  .product-card {
+    @apply bg-white rounded-xl p-6 transition-all duration-300;
+    @apply border border-slate-200/60 hover:border-slate-300;
+    @apply hover:shadow-elevated hover:-translate-y-1;
+    background: linear-gradient(to bottom, white, #fafafa);
+  }
+  .product-card-featured {
+    @apply relative overflow-hidden ring-2 ring-blue-500/20 shadow-intense;
+  }
+  .rating-badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full;
+    @apply bg-gradient-to-r from-amber-50 to-yellow-50;
+    @apply border border-amber-200/50 text-amber-900 font-semibold;
+  }
+  .hero-section {
+    @apply relative py-16 lg:py-24 overflow-hidden;
+    background: linear-gradient(135deg, var(--accent-from, #0f172a) 0%, var(--accent-to, #1e293b) 100%);
+  }
+  .comparison-grid { @apply grid gap-4 md:grid-cols-3 relative; }
+  .ad-container {
+    @apply relative my-12 rounded-lg overflow-hidden border border-slate-200 bg-slate-50/50;
+    min-height: 280px;
+  }
+}
+
+html { scroll-behavior: smooth; }
 details > summary { list-style: none; }
 details > summary::-webkit-details-marker { display: none; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
