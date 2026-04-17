@@ -1,0 +1,12 @@
+[
+  { "slug": "crm", "label": "CRM", "description": "Software de gestión de relaciones con clientes" },
+  { "slug": "erp", "label": "ERP", "description": "Sistemas de planificación de recursos empresariales" },
+  { "slug": "facturacion", "label": "Facturación", "description": "Software de facturación electrónica y gestión fiscal" },
+  { "slug": "contabilidad", "label": "Contabilidad", "description": "Herramientas de contabilidad y gestión financiera" },
+  { "slug": "marketing", "label": "Marketing", "description": "Plataformas de automatización y marketing digital" },
+  { "slug": "recursos-humanos", "label": "Recursos Humanos", "description": "Software de gestión de talento y nóminas" },
+  { "slug": "gestion-proyectos", "label": "Gestión de Proyectos", "description": "Herramientas de planificación y colaboración" },
+  { "slug": "inteligencia-artificial", "label": "Inteligencia Artificial", "description": "Soluciones empresariales con IA" },
+  { "slug": "ecommerce", "label": "E-commerce", "description": "Plataformas de comercio electrónico" },
+  { "slug": "email-marketing", "label": "Email Marketing", "description": "Herramientas de email marketing automation" }
+]
