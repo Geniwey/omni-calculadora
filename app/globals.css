@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll suave para los anchor links de la tabla de contenidos */
+html { scroll-behavior: smooth; }
+
+/* Oculta el marcador nativo de <details> en todos los navegadores */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
