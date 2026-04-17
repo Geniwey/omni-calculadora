@@ -1,0 +1,12 @@
+[
+  { "name": "Inmobiliarias", "slug": "inmobiliarias", "sector": "crm", "theme": { "colorPrincipal": "blue" } },
+  { "name": "Asesorías", "slug": "asesorias", "sector": "crm", "theme": { "colorPrincipal": "indigo" } },
+  { "name": "Abogados", "slug": "abogados", "sector": "crm", "theme": { "colorPrincipal": "violet" } },
+  { "name": "Autónomos", "slug": "autonomos", "sector": "facturacion", "theme": { "colorPrincipal": "emerald" } },
+  { "name": "Pymes", "slug": "pymes", "sector": "facturacion", "theme": { "colorPrincipal": "teal" } },
+  { "name": "Agencias", "slug": "agencias", "sector": "marketing", "theme": { "colorPrincipal": "rose" } },
+  { "name": "Ecommerce", "slug": "ecommerce", "sector": "marketing", "theme": { "colorPrincipal": "orange" } },
+  { "name": "Atención al Cliente", "slug": "atencion-cliente", "sector": "ia", "theme": { "colorPrincipal": "purple" } },
+  { "name": "Retail", "slug": "retail", "sector": "erp", "theme": { "colorPrincipal": "amber" } },
+  { "name": "Construcción", "slug": "construccion", "sector": "proyectos", "theme": { "colorPrincipal": "amber" } }
+]
