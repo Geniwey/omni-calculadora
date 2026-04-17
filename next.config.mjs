@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Forzamos a que ignore errores de tipos y linting para que el build pase sí o sí
-  typescript: { ignoreBuildErrors: true },
-  eslint: { ignoreDuringBuilds: true },
-  // Esto asegura que Next.js entienda las rutas relativas
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': '.',
-    };
-    return config;
+  // Sin alias @/ — usamos rutas relativas simples, cero errores de resolución
+  images: {
+    unoptimized: true, // gratis en Vercel Hobby
   },
-};
+  // Silencia el aviso de tamaño de build en páginas grandes
+  experimental: {
+    largePageDataBytes: 512 * 1024,
+  },
+}
 
-export default nextConfig;
+export default nextConfig
