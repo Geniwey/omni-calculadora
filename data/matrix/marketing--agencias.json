@@ -1,0 +1,97 @@
+{
+  "categoria": "marketing",
+  "nicho": "agencias",
+  "titulo_h1": "Los 4 mejores Marketing para Agencias en 2026",
+  "meta_title": "Mejor Marketing para Agencias 2026 | Top 4",
+  "meta_description": "Análisis de software para Agencias. Comparamos los 4 mejores Marketing del mercado español.",
+  "intro": "Para un Agencias, elegir el Marketing adecuado es vital.",
+  "pain_points": [
+    "Punto de dolor 1",
+    "Punto de dolor 2",
+    "Punto de dolor 3"
+  ],
+  "theme": {
+    "colorPrincipal": "rose"
+  },
+  "productos": [
+    {
+      "nombre": "HubSpot",
+      "slug": "hubspot-slug",
+      "puntuacion": 4.8,
+      "precio_desde": "X€/mes",
+      "descripcion": "Ideal para Agencias.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://hubspot.com",
+      "badge": "Mejor Valoración"
+    },
+    {
+      "nombre": "Marketo",
+      "slug": "marketo-slug",
+      "puntuacion": 4.6,
+      "precio_desde": "X€/mes",
+      "descripcion": "Ideal para Agencias.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://marketo.com",
+      "badge": "Mejor Valoración"
+    },
+    {
+      "nombre": "Pardot",
+      "slug": "pardot-slug",
+      "puntuacion": 4.7,
+      "precio_desde": "X€/mes",
+      "descripcion": "Ideal para Agencias.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://pardot.com",
+      "badge": "Mejor Valoración"
+    },
+    {
+      "nombre": "Mailchimp",
+      "slug": "mailchimp-slug",
+      "puntuacion": 4.5,
+      "precio_desde": "X€/mes",
+      "descripcion": "Ideal para Agencias.",
+      "pros": [
+        "Ventaja 1",
+        "Ventaja 2"
+      ],
+      "cons": [
+        "Inconveniente 1"
+      ],
+      "url_afiliado": "https://mailchimp.com",
+      "badge": "Mejor Valoración"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Es fácil de usar?",
+      "respuesta": "Sí, para un Agencias es intuitivo."
+    },
+    {
+      "pregunta": "¿Cuál es el precio?",
+      "respuesta": "Varía según el plan."
+    },
+    {
+      "pregunta": "¿Cuál es la mejor opción?",
+      "respuesta": "La mejor opción es la que mejor se adapte a tus necesidades."
+    }
+  ],
+  "last_updated": "2026-04-20"
+}
